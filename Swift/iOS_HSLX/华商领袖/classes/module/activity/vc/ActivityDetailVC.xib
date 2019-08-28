@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityDetailVC">
+            <connections>
+                <outlet property="tableView" destination="FOm-Cf-K0N" id="RPt-4D-5KL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1la-Id-Mgk">
+                    <rect key="frame" x="0.0" y="846" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tf-ts-MfI">
+                            <rect key="frame" x="124" y="0.0" width="290" height="50"/>
+                            <color key="backgroundColor" red="0.24313725489999999" green="0.41960784309999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="立即报名">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="modifyBtnClick:" destination="-1" eventType="touchUpInside" id="oPr-Ya-laI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoH-46-vcQ" customClass="WNButton" customModule="华商领袖" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="124" height="50"/>
+                            <state key="normal" title="拨打">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dialBtnClick:" destination="-1" eventType="touchUpInside" id="tIL-1M-Zym"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="OoH-46-vcQ" firstAttribute="top" secondItem="1la-Id-Mgk" secondAttribute="top" id="DW8-ql-yKF"/>
+                        <constraint firstItem="OoH-46-vcQ" firstAttribute="leading" secondItem="1la-Id-Mgk" secondAttribute="leading" id="EmV-Fa-Kz3"/>
+                        <constraint firstItem="1Tf-ts-MfI" firstAttribute="top" secondItem="1la-Id-Mgk" secondAttribute="top" id="IRh-TL-wu5"/>
+                        <constraint firstAttribute="height" constant="50" id="Qpd-yD-c81"/>
+                        <constraint firstAttribute="bottom" secondItem="1Tf-ts-MfI" secondAttribute="bottom" id="Zk7-CR-eR0"/>
+                        <constraint firstItem="1Tf-ts-MfI" firstAttribute="leading" secondItem="OoH-46-vcQ" secondAttribute="trailing" id="aea-4f-d6i"/>
+                        <constraint firstItem="OoH-46-vcQ" firstAttribute="width" secondItem="1la-Id-Mgk" secondAttribute="width" multiplier="0.3" id="mgr-AI-ZGT"/>
+                        <constraint firstAttribute="bottom" secondItem="OoH-46-vcQ" secondAttribute="bottom" id="nwh-7z-6M8"/>
+                        <constraint firstAttribute="trailing" secondItem="1Tf-ts-MfI" secondAttribute="trailing" id="zoE-hm-p7W"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FOm-Cf-K0N">
+                    <rect key="frame" x="0.0" y="44" width="414" height="802"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1la-Id-Mgk" firstAttribute="top" secondItem="FOm-Cf-K0N" secondAttribute="bottom" id="DUi-av-q65"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1la-Id-Mgk" secondAttribute="trailing" id="ECo-lO-cYe"/>
+                <constraint firstItem="FOm-Cf-K0N" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Frd-eY-6ua"/>
+                <constraint firstAttribute="bottom" secondItem="1la-Id-Mgk" secondAttribute="bottom" id="a79-SL-NVJ"/>
+                <constraint firstItem="1la-Id-Mgk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dF7-8O-3lb"/>
+                <constraint firstItem="FOm-Cf-K0N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hUl-Td-FzU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FOm-Cf-K0N" secondAttribute="trailing" id="pHF-X6-McB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>
+        </view>
+    </objects>
+</document>

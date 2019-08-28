@@ -1,0 +1,51 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target '华商领袖' do 
+
+pod "BaiduMapKit"
+pod "BMKLocationKit"
+
+pod "Alamofire"
+#更高层的网络请求封装抽象层
+pod "Moya"
+#json tranform model
+pod "ObjectMapper"
+#Observable的扩展库
+pod "Moya-ObjectMapper"
+
+pod "Result"
+
+pod "RxSwift"
+pod "RxCocoa"
+
+#分享框架
+pod "MonkeyKing"
+pod "SwiftyJSON"
+
+pod 'IQKeyboardManagerSwift'
+
+#load image
+pod "Kingfisher"  
+
+#pod "SwiftyJSON"
+
+#pod "SwiftyUserDefaults"
+
+#加载提示
+pod "NVActivityIndicatorView"
+#masonry
+pod "SnapKit"
+
+pod "JXPhotoBrowser"
+
+pod 'MJRefresh', '~> 3.1.14.1'
+#下拉刷新
+#pod "DGElasticPullToRefresh"
+
+#pod "ImagePicker"
+
+#sdwebimage
+#pod "Kingfisher"
+end

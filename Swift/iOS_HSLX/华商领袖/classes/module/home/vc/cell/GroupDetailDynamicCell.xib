@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="245" id="KGk-i7-Jjw" customClass="GroupDetailDynamicCell" customModule="华商领袖" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="244.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGp-Vs-nYj">
+                        <rect key="frame" x="0.0" y="0.0" width="396" height="244"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="介绍" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChB-VM-i4o">
+                                <rect key="frame" x="15" y="38" width="366" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EsD-GZ-fvf">
+                                <rect key="frame" x="15" y="60.5" width="366" height="169"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Udy-ZR-p3C">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="组织名称" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e92-Gs-1w3">
+                                <rect key="frame" x="15" y="10" width="366" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.066666666669999999" green="0.18823529410000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e92-Gs-1w3" firstAttribute="top" secondItem="Eef-y3-vEd" secondAttribute="top" constant="10" id="6a6-og-LIM"/>
+                            <constraint firstItem="Eef-y3-vEd" firstAttribute="bottom" secondItem="EsD-GZ-fvf" secondAttribute="bottom" constant="15" id="9bZ-Rn-QuN"/>
+                            <constraint firstItem="EsD-GZ-fvf" firstAttribute="leading" secondItem="ChB-VM-i4o" secondAttribute="leading" id="Ale-dD-wlK"/>
+                            <constraint firstItem="EsD-GZ-fvf" firstAttribute="top" secondItem="ChB-VM-i4o" secondAttribute="bottom" constant="8" id="OMU-vN-P1w"/>
+                            <constraint firstItem="ChB-VM-i4o" firstAttribute="top" secondItem="e92-Gs-1w3" secondAttribute="bottom" constant="10" id="RgZ-5b-cgw"/>
+                            <constraint firstItem="ChB-VM-i4o" firstAttribute="leading" secondItem="Eef-y3-vEd" secondAttribute="leading" constant="15" id="X1K-Iw-ADR"/>
+                            <constraint firstItem="e92-Gs-1w3" firstAttribute="leading" secondItem="Eef-y3-vEd" secondAttribute="leading" constant="15" id="ZsX-gP-oXo"/>
+                            <constraint firstItem="ChB-VM-i4o" firstAttribute="trailing" secondItem="Eef-y3-vEd" secondAttribute="trailing" constant="-15" id="ah4-mF-IfO"/>
+                            <constraint firstItem="EsD-GZ-fvf" firstAttribute="trailing" secondItem="ChB-VM-i4o" secondAttribute="trailing" id="jhS-Hj-vlI"/>
+                            <constraint firstItem="Eef-y3-vEd" firstAttribute="trailing" secondItem="e92-Gs-1w3" secondAttribute="trailing" constant="15" id="wX7-eR-lDG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Eef-y3-vEd"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nGp-Vs-nYj" secondAttribute="trailing" id="BOX-XE-TC2"/>
+                    <constraint firstItem="nGp-Vs-nYj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NL5-bv-0Tj"/>
+                    <constraint firstAttribute="bottom" secondItem="nGp-Vs-nYj" secondAttribute="bottom" id="bTR-Fw-ylc"/>
+                    <constraint firstItem="nGp-Vs-nYj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jc7-gN-cWZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="EsD-GZ-fvf" id="3Bn-oM-gnR"/>
+                <outlet property="descLabel" destination="ChB-VM-i4o" id="pF8-9r-22G"/>
+                <outlet property="nameLabel" destination="e92-Gs-1w3" id="dcx-Hh-h2O"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="85.379464285714278"/>
+        </tableViewCell>
+    </objects>
+</document>
